@@ -126,13 +126,13 @@ button1_pin.pull = Pull.UP      # turn on internal pull-up resistor
 button1 =  Debouncer(button1_pin)
 
 #init payload selection switch
-payload1Pin = digitalio.DigitalInOut(GP4)
+payload1Pin = digitalio.DigitalInOut(GP26_A0)
 payload1Pin.switch_to_input(pull=digitalio.Pull.UP)
-payload2Pin = digitalio.DigitalInOut(GP5)
+payload2Pin = digitalio.DigitalInOut(GP7)
 payload2Pin.switch_to_input(pull=digitalio.Pull.UP)
-payload3Pin = digitalio.DigitalInOut(GP10)
+payload3Pin = digitalio.DigitalInOut(GP20)
 payload3Pin.switch_to_input(pull=digitalio.Pull.UP)
-payload4Pin = digitalio.DigitalInOut(GP11)
+payload4Pin = digitalio.DigitalInOut(11)
 payload4Pin.switch_to_input(pull=digitalio.Pull.UP)
 
 def getProgrammingStatus():
@@ -171,9 +171,9 @@ def selectPayload():
     global payload1Pin, payload2Pin, payload3Pin, payload4Pin
     payload = "payload.dd"
     # check switch status
-    # payload1 = GPIO4 to GND
-    # payload2 = GPIO5 to GND
-    # payload3 = GPIO10 to GND
+    # payload1 = GPIO26 to GND
+    # payload2 = GPIO7 to GND
+    # payload3 = GPIO20 to GND
     # payload4 = GPIO11 to GND
     payload1State = not payload1Pin.value
     payload2State = not payload2Pin.value
@@ -181,7 +181,7 @@ def selectPayload():
     payload4State = not payload4Pin.value
 
     if(payload1State == True):
-        payload = "payload.dd"
+        payload = "payload1.dd"
 
     elif(payload2State == True):
         payload = "payload2.dd"
@@ -194,7 +194,7 @@ def selectPayload():
 
     else:
         # if all pins are high, then no switch is present
-        # default to payload1
+        # default to payload
         payload = "payload.dd"
 
     return payload

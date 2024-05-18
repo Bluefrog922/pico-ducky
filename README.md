@@ -52,18 +52,18 @@ The easiest way to do so is by using a jumper wire between those pins as seen be
 
 ![Setup mode with a jumper](images/setup-mode.png)
 
-## USB enable/disable mode
+## USB enable mode
 
-If you need the pico-ducky to not show up as a USB mass storage device for stealth, follow these instructions.  
-- Enter setup mode.    
-- Copy your payload script to the pico-ducky.  
+If you need the pico-ducky to show up as a USB mass storage device for file system access, follow these instructions.  
+- Enter setup mode.
+- Connect a jumper wire between pin 18 (`GND`) and pin 20 (`GPIO15`).
+This will make the pico-ducky show up as a USB drive when plugged into the target computer.
+- Copy your payload script to the pico-ducky.
+- Remove the jumper and reconnect to your PC to hide the drive.
 - Disconnect the pico from your host PC.
-- Connect a jumper wire between pin 18 (`GND`) and pin 20 (`GPIO15`).  
-This will prevent the pico-ducky from showing up as a USB drive when plugged into the target computer.  
-- Remove the jumper and reconnect to your PC to reprogram.  
 
-Pico: The default mode is USB mass storage enabled.   
-Pico W: The default mode is USB mass storage **disabled**  
+Pico: The default mode is USB mass storage enabled.
+Pico W: The default mode is USB mass storage **disabled**
 
 ![USB enable/disable mode](images/usb-boot-mode.png)
 
