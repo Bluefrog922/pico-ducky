@@ -77,7 +77,7 @@ newrow_html = "<tr><td>{}</td><td><a href='/edit/{}'>Edit</a> / <a href='/run/{}
 
 def setPayload(payload_number):
     if(payload_number == 1):
-        payload = "payload.dd"
+        payload = "payload1.dd"
 
     else:
         payload = "payload"+str(payload_number)+".dd"

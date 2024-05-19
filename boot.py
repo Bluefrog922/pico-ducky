@@ -20,8 +20,11 @@ noStorageStatus = noStoragePin.value
 #   GP15 not connected == USB NOT visible
 #   GP15 connected to GND == USB visible
 
-#always defult to hidden
-noStorage = noStorageStatus
+#always defult to hidden unless debug file present
+if "debug.mode" in os.listdir(""):
+    noStorage = not noStorageStatus
+else:
+    noStorage = noStorageStatus
 
 if(noStorage == True):
     # don't show USB drive to host PC

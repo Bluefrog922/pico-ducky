@@ -7,11 +7,11 @@
 <br />
 
 <div align="center">
-  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/dbisu/pico-ducky">
-  <img alt="GitHub license" src="https://img.shields.io/github/license/dbisu/pico-ducky">
-  <a href="https://github.com/dbisu/pico-ducky/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/dbisu/pico-ducky"></a>
-  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/dbisu/pico-ducky">
-  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/dbisu/pico-ducky">
+  <img alt="GitHub code size in bytes" src="https://img.shields.io/github/languages/code-size/bluefrog922/pico-ducky">
+  <img alt="GitHub license" src="https://img.shields.io/github/license/bluefrog922/pico-ducky">
+  <a href="https://github.com/bluefrog922/pico-ducky/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/bluefrog922/pico-ducky"></a>
+  <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/m/bluefrog922/pico-ducky">
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/bluefrog922/pico-ducky">
 </div>
 
 <br />
@@ -19,7 +19,7 @@
 ## Quick Start Guide
 Install and have your USB Rubber Ducky working in less than 5 minutes.
 
-1. Download the latest release from the [Releases](https://github.com/dbisu/pico-ducky/releases) page.
+1. Download the latest release from the [Releases](https://github.com/bluefrog922/pico-ducky/releases) page.
 
 2. Plug the device into a USB port while holding the boot button. It will show up as a removable media device named RPI-RP2.
 
@@ -62,9 +62,6 @@ This will make the pico-ducky show up as a USB drive when plugged into the targe
 - Remove the jumper and reconnect to your PC to hide the drive.
 - Disconnect the pico from your host PC.
 
-Pico: The default mode is USB mass storage enabled.
-Pico W: The default mode is USB mass storage **disabled**
-
 ![USB enable/disable mode](images/usb-boot-mode.png)
 
 
@@ -74,7 +71,7 @@ Pico W: The default mode is USB mass storage **disabled**
 
 Install and have your USB Rubber Ducky working in less than 5 minutes.
 
-1. Clone the repo to get a local copy of the files. `git clone https://github.com/dbisu/pico-ducky.git`
+1. Clone the repo to get a local copy of the files. `git clone https://github.com/bluefrog922/pico-ducky.git`
 
 2. Download [CircuitPython for the Raspberry Pi Pico](https://circuitpython.org/board/raspberry_pi_pico/). *Updated to 8.0.0  
    Download [CircuitPython for the Raspberry Pi Pico W](https://circuitpython.org/board/raspberry_pi_pico_w/). *Updated to 8.0.0
